@@ -1,11 +1,14 @@
 :root {
-  --bg: #f6f3ec;
+  --bg: #f4f0e7;
   --surface: #ffffff;
   --ink: #202124;
   --muted: #687076;
   --line: #ded8cc;
   --accent: #167f68;
   --accent-strong: #0f5f4d;
+  --gold: #d49b32;
+  --coral: #bd4b3f;
+  --navy: #263746;
   --warning: #c47a1c;
   --shadow: 0 18px 50px rgba(34, 35, 36, 0.1);
 }
@@ -18,7 +21,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(120deg, rgba(22, 127, 104, 0.1), transparent 36%),
+    linear-gradient(180deg, #263746 0 210px, transparent 210px),
+    linear-gradient(120deg, rgba(22, 127, 104, 0.12), transparent 42%),
     var(--bg);
   color: var(--ink);
   font-family:
@@ -42,8 +46,20 @@ select {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 20px;
-  align-items: end;
+  align-items: stretch;
   margin-bottom: 18px;
+}
+
+.brand-panel {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  min-height: 154px;
+  padding: 22px;
+  background: linear-gradient(135deg, #ffffff, #fff8eb);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .eyebrow {
@@ -84,6 +100,7 @@ h1 {
   display: grid;
   gap: 7px;
   min-width: 180px;
+  align-self: stretch;
   padding: 14px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -117,10 +134,32 @@ h1 {
 }
 
 .dashboard article {
+  position: relative;
+  overflow: hidden;
   padding: 18px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(34, 35, 36, 0.06);
+}
+
+.dashboard article::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 7px;
+}
+
+.metric-done::before {
+  background: var(--accent);
+}
+
+.metric-pending::before {
+  background: var(--coral);
+}
+
+.metric-progress::before {
+  background: var(--gold);
 }
 
 .dashboard span {
@@ -160,6 +199,11 @@ h1 {
   gap: 10px;
   align-items: end;
   margin-bottom: 18px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(222, 216, 204, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(34, 35, 36, 0.07);
 }
 
 .control-field {
@@ -345,7 +389,10 @@ h1 {
   justify-content: space-between;
   gap: 12px;
   align-items: center;
-  padding: 0 2px;
+  padding: 10px 12px;
+  background: var(--navy);
+  border-radius: 8px;
+  color: white;
 }
 
 .category-heading h2 {
@@ -354,15 +401,15 @@ h1 {
 }
 
 .category-heading span {
-  color: var(--muted);
+  color: #f6d27b;
   font-weight: 800;
 }
 
 .task-row {
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 42px 48px 1fr;
   gap: 12px;
-  align-items: start;
+  align-items: center;
   padding: 15px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -373,6 +420,23 @@ h1 {
 .task-row.is-done {
   border-color: rgba(22, 127, 104, 0.4);
   background: #f8fffb;
+}
+
+.task-number {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 8px;
+  background: #f2eadb;
+  color: var(--navy);
+  font-size: 0.82rem;
+  font-weight: 950;
+}
+
+.task-row.is-done .task-number {
+  background: rgba(22, 127, 104, 0.13);
+  color: var(--accent-strong);
 }
 
 .check-control {
@@ -451,6 +515,12 @@ h1 {
   font-weight: 800;
 }
 
+.task-row.is-done .task-meta span:last-child {
+  border-color: rgba(22, 127, 104, 0.28);
+  background: rgba(22, 127, 104, 0.1);
+  color: var(--accent-strong);
+}
+
 .empty-state {
   padding: 28px;
   text-align: center;
@@ -486,6 +556,10 @@ h1 {
   .dashboard {
     grid-template-columns: 1fr;
   }
+
+  .brand-panel {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 560px) {
@@ -495,9 +569,14 @@ h1 {
   }
 
   .task-row {
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 34px 40px 1fr;
     padding: 12px;
   }
+
+  .brand-panel {
+    align-items: flex-start;
+  }
+
 
   .task-title-line {
     display: grid;

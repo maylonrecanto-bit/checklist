@@ -3,10 +3,10 @@ const taskGroups = [
     category: "Abertura - Caixa",
     owner: "Caixa",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Sistema funcionando corretamente, ligar e conferir",
       "Abrir caixa e terminais",
-      "Planilha de comandas individuais preenchida pelos garcons",
+      "Planilha de comandas individuais preenchida pelos garçons",
       "Conferir suprimento",
       "Conferir estoque de bomboniere",
       "Ligar luzes",
@@ -24,11 +24,11 @@ const taskGroups = [
     category: "Fechamento - Caixa",
     owner: "Caixa",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
+      "Seguir horário de fechamento e confirmar com a gerência",
       "Preencher livro",
       "Desligar caixas e terminais",
       "Conferir suprimento",
-      "Desligar maquina de cartoes",
+      "Desligar máquina de cartões",
       "Desligar equipamento de som",
       "Desligar luzes",
       "Desligar luz de led do caixa",
@@ -39,30 +39,30 @@ const taskGroups = [
     category: "Abertura - Churrasqueira",
     owner: "Churrasqueira",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Fazer limpeza geral",
       "Limpar Char broiler",
-      "Limpar radiador de 15 em 15 dias",
+      "Limpar radiador a cada 15 dias",
       "Conferir estoque para o dia e descongelar",
-      "Montar praca",
+      "Montar praça",
       "Organizar pista fria",
       "Fazer giro das carnes",
       "Preencher planilhas",
-      "Economizar gas quando possivel",
-      "Verificar producao de vinagrete pronta",
+      "Economizar gás quando possível",
+      "Verificar se há produção de vinagrete pronta",
     ],
   },
   {
     category: "Fechamento - Churrasqueira",
     owner: "Churrasqueira",
     items: [
-      "Seguir horario de fechamento e comunicar a gerencia",
+      "Seguir horário de fechamento e comunicar a gerência",
       "Fazer limpeza geral",
       "Fazer lista de pedidos",
-      "Lavar tabuleiro, caixa termica e utensilios",
-      "Guardar sobras de carnes cruas na camara fria",
-      "Desligar balcao e gas",
-      "Retirar resto de carvao para o tambor",
+      "Lavar tabuleiro, caixa térmica e utensílios",
+      "Guardar sobras de carnes cruas na câmara fria",
+      "Desligar balcão e gás",
+      "Retirar resto de carvão para o tambor",
       "Desmontar pista fria",
       "Limpar pista fria",
       "Desligar Char broiler",
@@ -73,37 +73,37 @@ const taskGroups = [
     category: "Abertura - Cozinha",
     owner: "Cozinha",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Fazer limpeza geral",
-      "Limpar caixa de gordura de 15 em 15 dias",
-      "Limpar fritadeira de 15 em 15 dias",
+      "Limpar caixa de gordura a cada 15 dias",
+      "Limpar fritadeira a cada 15 dias",
       "Fazer contagem de estoque",
-      "Montar praca",
-      "Organizar camara fria e freezer",
-      "Preparar jantar dos funcionarios ou almoco de sabado",
+      "Montar praça",
+      "Organizar câmara fria e freezer",
+      "Preparar jantar dos funcionários ou almoço de sábado",
       "Ligar fritadeiras",
-      "Montar festival e producao",
-      "Ligar exaustao",
-      "Conferir producao de porcoes",
+      "Montar festival e produção",
+      "Ligar exaustão",
+      "Conferir produção de porções",
       "Conferir estoque para trabalhar o dia",
-      "Conferir rede de gas",
+      "Conferir rede de gás",
     ],
   },
   {
     category: "Fechamento - Cozinha",
     owner: "Cozinha",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
+      "Seguir horário de fechamento e confirmar com a gerência",
       "Fazer limpeza geral",
       "Desligar fritadeiras",
-      "Desligar chamas do fogao e registro de gas",
-      "Desligar exaustao",
-      "Desmontar praca",
+      "Desligar chamas do fogão e registro de gás",
+      "Desligar exaustão",
+      "Desmontar praça",
       "Armazenar e guardar mercadorias",
       "Preencher planilhas",
       "Fazer pedido",
       "Etiquetar produtos",
-      "Deixar camara fria limpa e fechada",
+      "Deixar câmara fria limpa e fechada",
       "Organizar estoque frio e seco",
       "Retirar lixo",
     ],
@@ -112,30 +112,30 @@ const taskGroups = [
     category: "Abertura - Copa",
     owner: "Copa",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Fazer limpeza",
-      "Contar quebra de utensilios e preencher planilha",
+      "Contar quebra de utensílios e preencher planilha",
       "Conferir equipamentos limpos e testados",
-      "Reforcar lavagem de utensilios",
-      "Nao deixar bancada cheia, usar caixa branca",
-      "Conferir banheiros do salao, pias e pisos limpos",
+      "Reforçar lavagem de utensílios",
+      "Não deixar bancada cheia; usar caixa branca",
+      "Conferir banheiros do salão, pias e pisos limpos",
       "Conferir descarga dos banheiros",
-      "Conferir papel toalha e papel higienico abastecidos",
-      "Organizar espaco e evitar acumulo de louca",
+      "Conferir papel toalha e papel higiênico abastecidos",
+      "Organizar espaço e evitar acúmulo de louça",
     ],
   },
   {
     category: "Fechamento - Copa",
     owner: "Copa",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
+      "Seguir horário de fechamento e confirmar com a gerência",
       "Fazer limpeza",
       "Deixar equipamentos limpos e desligados",
-      "Limpar e desligar maquina de copos e pratos",
-      "Reforcar lavagem de utensilios",
-      "Organizar copos, talheres e loucas",
+      "Limpar e desligar máquina de copos e pratos",
+      "Reforçar lavagem de utensílios",
+      "Organizar copos, talheres e louças",
       "Desligar luzes e ventiladores",
-      "Retirar residuos da pia",
+      "Retirar resíduos da pia",
       "Retirar lixo",
     ],
   },
@@ -143,7 +143,7 @@ const taskGroups = [
     category: "Abertura - Bar",
     owner: "Bar",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Fazer limpeza geral, principalmente bicos das chopeiras",
       "Conferir tulipas geladas para o dia",
       "Ligar CO2 e engatar barril de chopp",
@@ -151,79 +151,79 @@ const taskGroups = [
       "Preparar torres de chopp com gelo",
       "Conferir estoque de polpas",
       "Conferir frutas",
-      "Conferir estoque e reposicao de bebidas",
-      "Organizar deposito e fazer giro das bebidas",
+      "Conferir estoque e reposição de bebidas",
+      "Organizar depósito e fazer giro das bebidas",
       "Verificar se falta algum produto",
       "Limpar freezer uma vez por semana",
-      "Limpar radiadores do freezer de 15 em 15 dias",
+      "Limpar radiadores do freezer a cada 15 dias",
       "Limpar freezer de tulipas semanalmente",
-      "Lavar baldes e porta-garrafa de 15 em 15 dias",
-      "Limpar maquina de gelo",
+      "Lavar baldes e porta-garrafas a cada 15 dias",
+      "Limpar máquina de gelo",
       "Porcionar frutas",
-      "Montar bebidas dos drinks, utensilios e praca",
-      "Descongelar chopeira com ajuda do gerente se necessario",
+      "Montar bebidas dos drinks, utensílios e praça",
+      "Descongelar chopeira com ajuda do gerente, se necessário",
     ],
   },
   {
     category: "Fechamento - Bar",
     owner: "Bar",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
+      "Seguir horário de fechamento e confirmar com a gerência",
       "Fazer limpeza",
       "Armazenar polpas",
       "Desligar CO2 e desengatar barril de chopp",
       "Deixar tulipas geladas para o dia seguinte",
       "Conferir funcionamento da chopeira CO2",
-      "Esvaziar maquina de gelo",
+      "Esvaziar máquina de gelo",
       "Desmontar bar de cima",
       "Repor bebidas",
       "Fazer giro das bebidas",
       "Deixar estoque em cima de pallet",
       "Guardar copos e tulipas limpos",
-      "Trancar deposito",
-      "Trancar deposito da copa de suco",
+      "Trancar depósito",
+      "Trancar depósito da copa de suco",
       "Preencher planilhas",
       "Retirar lixo",
       "Limpar cafeteria, espremedores e similares",
       "Lavar torneiras da chopeira",
       "Guardar todo material de uso",
-      "Desmontar bebidas dos drinks e utensilios lavados",
-      "Verificar se freezer esta ligado",
+      "Desmontar bebidas dos drinks e utensílios lavados",
+      "Verificar se o freezer está ligado",
     ],
   },
   {
-    category: "Abertura - Gerencia",
-    owner: "Gerencia",
+    category: "Abertura - Gerência",
+    owner: "Gerência",
     items: [
       "Garantir gerente na abertura da casa",
       "Conferir checklist de cada setor",
-      "Conferir horario de abertura de todos",
-      "Distribuir funcoes do checklist por setor com lideres",
+      "Conferir horário de abertura de todos",
+      "Distribuir funções do checklist por setor com líderes",
       "Conferir procedimentos de caixa",
-      "Acompanhar manutencoes para nao acumular",
+      "Acompanhar manutenções para não acumular",
       "Conferir bolachas de chopp limpas e em bom estado",
-      "Conferir limpeza geral da copa, salao, bar, churrasqueira, caixa e cozinha",
+      "Conferir limpeza geral da copa, salão, bar, churrasqueira, caixa e cozinha",
       "Conferir limpeza de portas e janelas",
-      "Fazer sorteio de pracas",
+      "Fazer sorteio de praças",
       "Ligar som e adequar volume",
       "Montar som para banda com volume adequado",
       "Verificar se falta algum produto",
       "Ligar climatizador",
-      "Ligar ar-condicionado quando necessario",
+      "Ligar ar-condicionado quando necessário",
       "Conferir limpeza do climatizador",
       "Tirar foto para rede social",
-      "Orientar atendentes a pedir marcacao no Instagram",
+      "Orientar atendentes a pedir marcação no Instagram",
       "Conferir e repassar agenda musical e futebol",
-      "Repassar promocao do dia para os garcons",
+      "Repassar promoção do dia para os garçons",
       "Verificar repostagem do Instagram com o caixa",
       "Verificar meta de vendas diariamente",
-      "Separar funcao de cada garcom no setor",
-      "Conferir lancamento de couvert e playground",
+      "Separar função de cada garçom no setor",
+      "Conferir lançamento de couvert e playground",
     ],
   },
   {
-    category: "Fechamento - Gerencia",
-    owner: "Gerencia",
+    category: "Fechamento - Gerência",
+    owner: "Gerência",
     items: [
       "Conferir checklists de cada setor",
       "Conferir limpeza geral dos setores",
@@ -231,51 +231,51 @@ const taskGroups = [
       "Desmontar som da banda",
       "Fazer lista de compras e enviar",
       "Desligar climatizador e ar-condicionado",
-      "Verificar fechamento do caixa e vistar",
-      "Verificar fechamento da casa, portas e portao",
-      "Conferir horario de fechamento",
+      "Verificar fechamento do caixa e vistá-lo",
+      "Verificar fechamento da casa, portas e portão",
+      "Conferir horário de fechamento",
       "Acompanhar procedimentos de fechamento do caixa",
-      "Verificar lixo no fechamento geral do refeitorio",
-      "Desligar nobreak toda terca-feira para teste dos computadores do caixa",
+      "Verificar lixo no fechamento geral do refeitório",
+      "Desligar nobreak toda terça-feira para teste dos computadores do caixa",
     ],
   },
   {
-    category: "Abertura - Salao Garcons",
-    owner: "Salao Garcons",
+    category: "Abertura - Salão Garçons",
+    owner: "Salão Garçons",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Conferir uniforme limpo e bem passado",
       "Conferir bolacha de chopp",
-      "Conferir aparencia, barba feita e higiene pessoal",
-      "Montar salao",
+      "Conferir aparência, barba feita e higiene pessoal",
+      "Montar salão",
       "Limpar mesas e cadeiras",
       "Limpar galeteiros",
-      "Limpar cardapios e QR Code",
+      "Limpar cardápios e QR Code",
       "Repor pimentas e limpar recipientes",
-      "Manter vasos de flores com agua limpa",
+      "Manter vasos de flores com água limpa",
       "Montar aparadores com copos, pratos e talheres limpos",
-      "Abastecer e limpar alcool em gel nos aparadores",
-      "Organizar bolachas com cuidado para nao embolorar",
-      "Organizar deposito de cadeiras e informar defeitos ao gerente",
+      "Abastecer e limpar álcool em gel nos aparadores",
+      "Organizar bolachas com cuidado para não embolorar",
+      "Organizar depósito de cadeiras e informar defeitos ao gerente",
       "Manter cordialidade no atendimento",
-      "Separar equipes responsaveis por cada setor",
+      "Separar equipes responsáveis por cada setor",
       "Manter aparadores limpos durante a noite",
     ],
   },
   {
-    category: "Fechamento - Salao Garcons",
-    owner: "Salao Garcons",
+    category: "Fechamento - Salão Garçons",
+    owner: "Salão Garçons",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
-      "Desmontar salao",
+      "Seguir horário de fechamento e confirmar com a gerência",
+      "Desmontar salão",
       "Guardar mesas e cadeiras",
       "Recolher galeteiros",
-      "Guardar cardapios e QR Code",
+      "Guardar cardápios e QR Code",
       "Desligar climatizador, ar-condicionado e TVs",
       "Guardar porta-garrafas",
       "Verificar aparadores",
       "Varrer deck",
-      "Organizar deposito de cadeiras e mesas",
+      "Organizar depósito de cadeiras e mesas",
       "Retirar lixo",
     ],
   },
@@ -283,11 +283,11 @@ const taskGroups = [
     category: "Abertura - Playground",
     owner: "Playground",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Fazer limpeza geral",
       "Conferir funcionamento de TVs, climatizador, brinquedos e jogos",
       "Acender luzes",
-      "Conferir e repassar manutencao dos brinquedos",
+      "Conferir e repassar manutenção dos brinquedos",
       "Organizar fundo do video game onde guarda objetos",
     ],
   },
@@ -295,7 +295,7 @@ const taskGroups = [
     category: "Fechamento - Playground",
     owner: "Playground",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
+      "Seguir horário de fechamento e confirmar com a gerência",
       "Fazer limpeza",
       "Desligar TVs e jogos",
       "Desligar climatizador",
@@ -307,25 +307,25 @@ const taskGroups = [
     category: "Abertura - Cumim",
     owner: "Cumim",
     items: [
-      "Seguir horario de abertura",
+      "Seguir horário de abertura",
       "Organizar e esterilizar talheres mantendo a caixa fechada",
-      "Limpar salao no decorrer da noite",
-      "Levar comidas e recolher utensilios sujos ou sem uso da mesa",
-      "Ficar atento ao sino para levar porcoes",
+      "Limpar salão no decorrer da noite",
+      "Levar comidas e recolher utensílios sujos ou sem uso da mesa",
+      "Ficar atento ao sino para levar porções",
       "Usar bandeja em tudo",
       "Limpar arco de luz da feijoada",
-      "Ajudar a copa levando utensilios",
-      "Organizar louca suja na caixa para evitar quebra",
+      "Ajudar a copa levando utensílios",
+      "Organizar louça suja na caixa para evitar quebra",
     ],
   },
   {
     category: "Fechamento - Cumim",
     owner: "Cumim",
     items: [
-      "Seguir horario de fechamento e confirmar com a gerencia",
-      "Organizar todos os utensilios",
-      "Varrer salao",
-      "Retirar lixo do salao",
+      "Seguir horário de fechamento e confirmar com a gerência",
+      "Organizar todos os utensílios",
+      "Varrer salão",
+      "Retirar lixo do salão",
     ],
   },
 ];
@@ -368,17 +368,85 @@ const pendingCount = document.querySelector("#pendingCount");
 const progressPercent = document.querySelector("#progressPercent");
 const progressBar = document.querySelector("#progressBar");
 
+const correctText = (text) =>
+  text
+    .replaceAll("horario", "horário")
+    .replaceAll("gerencia", "gerência")
+    .replaceAll("Gerencia", "Gerência")
+    .replaceAll("manutencoes", "manutenções")
+    .replaceAll("manutencao", "manutenção")
+    .replaceAll("funcoes", "funções")
+    .replaceAll("funcao", "função")
+    .replaceAll("funcionarios", "funcionários")
+    .replaceAll("lideres", "líderes")
+    .replaceAll("salao", "salão")
+    .replaceAll("Salao", "Salão")
+    .replaceAll("garcons", "garçons")
+    .replaceAll("Garcons", "Garçons")
+    .replaceAll("garcom", "garçom")
+    .replaceAll("praca", "praça")
+    .replaceAll("Praca", "Praça")
+    .replaceAll("producao", "produção")
+    .replaceAll("porcoes", "porções")
+    .replaceAll("utensilios", "utensílios")
+    .replaceAll("louca", "louça")
+    .replaceAll("alcool", "álcool")
+    .replaceAll("Nao", "Não")
+    .replaceAll("nao", "não")
+    .replaceAll("necessario", "necessário")
+    .replaceAll("deposito", "depósito")
+    .replaceAll("maquina", "máquina")
+    .replaceAll("cartoes", "cartões")
+    .replaceAll("higienico", "higiênico")
+    .replaceAll("espaco", "espaço")
+    .replaceAll("acumulo", "acúmulo")
+    .replaceAll("refeitorio", "refeitório")
+    .replaceAll("terca", "terça")
+    .replaceAll("esta", "está")
+    .replaceAll("camara", "câmara")
+    .replaceAll("gas", "gás")
+    .replaceAll("balcao", "balcão")
+    .replaceAll("carvao", "carvão")
+    .replaceAll("fogao", "fogão")
+    .replaceAll("residuos", "resíduos")
+    .replaceAll("reposicao", "reposição")
+    .replaceAll("marcacao", "marcação")
+    .replaceAll("promocao", "promoção")
+    .replaceAll("lancamento", "lançamento")
+    .replaceAll("aparencia", "aparência")
+    .replaceAll("cardapios", "cardápios")
+    .replaceAll("agua", "água")
+    .replaceAll("responsaveis", "responsáveis")
+    .replaceAll("portao", "portão");
+
 const normalizeTasks = (taskList) =>
   taskList.map((task) => {
-    if (task.sector && task.operation) return task;
+    if (task.sector && task.operation) {
+      return {
+        ...task,
+        category: correctText(task.category),
+        owner: correctText(task.owner),
+        sector: correctText(task.sector),
+        title: correctText(task.title),
+      };
+    }
     const [operation = "Abertura", sector = task.owner || "Geral"] = task.category.split(" - ");
-    return { ...task, operation, sector };
+    return {
+      ...task,
+      category: correctText(task.category),
+      owner: correctText(task.owner),
+      operation,
+      sector: correctText(sector),
+      title: correctText(task.title),
+    };
   });
 
 const readTaskCatalog = () => {
   try {
     const savedTasks = JSON.parse(localStorage.getItem(taskCatalogKey));
-    return Array.isArray(savedTasks) && savedTasks.length ? normalizeTasks(savedTasks) : defaultTasks;
+    return Array.isArray(savedTasks) && savedTasks.length
+      ? normalizeTasks(savedTasks)
+      : normalizeTasks(defaultTasks);
   } catch {
     return defaultTasks;
   }
@@ -405,10 +473,16 @@ if (dateInput) {
   dateInput.value = localStorage.getItem("restaurant-checklist-date") || today;
 }
 if (storeFilter) {
-  storeFilter.value = localStorage.getItem("restaurant-checklist-store") || storeFilter.value;
+  const savedStore = localStorage.getItem("restaurant-checklist-store");
+  storeFilter.value = savedStore === "Recanto da Praca" ? "Recanto da Praça" : savedStore || storeFilter.value;
 }
 
-const makeStorageValue = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const makeStorageValue = (value) =>
+  value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-");
 
 const getSelectedStore = () => storeFilter?.value || "Choperia Colorado";
 
@@ -458,7 +532,7 @@ const updateSummary = () => {
   pendingCount.textContent = pending;
   progressPercent.textContent = `${percent}%`;
   progressBar.style.width = `${percent}%`;
-  sendSummary.textContent = `${getSelectedStore()} - ${operationFilter.value} - ${sectorFilter.value}: ${completed} de ${selectedTasks.length} tarefas concluidas.`;
+  sendSummary.textContent = `${getSelectedStore()} - ${operationFilter.value} - ${sectorFilter.value}: ${completed} de ${selectedTasks.length} tarefas concluídas.`;
   whatsappButton.disabled = completed === 0;
 };
 
@@ -472,12 +546,12 @@ const getCompletedMessage = () => {
     `Data: ${dateInput.value}`,
     `Setor: ${sectorFilter.value}`,
     `Tipo: ${operationFilter.value}`,
-    `Concluidas: ${completedTasks.length}/${selectedTasks.length}`,
+    `Concluídas: ${completedTasks.length}/${selectedTasks.length}`,
     "",
   ];
 
   completedTasks.forEach((task) => {
-    const completedAt = state[task.id]?.completedAt || "horario nao registrado";
+    const completedAt = state[task.id]?.completedAt || "horário não registrado";
     lines.push(`- ${task.title} - ${completedAt}`);
   });
 
@@ -507,8 +581,9 @@ const renderChecklist = () => {
   heading.innerHTML = `<h2>${sectorFilter.value}</h2><span>${getSelectedStore()} - ${operationFilter.value} - ${filteredTasks.length} tarefas</span>`;
   section.append(heading);
 
-  filteredTasks.forEach((task) => {
+  filteredTasks.forEach((task, index) => {
     const row = template.content.firstElementChild.cloneNode(true);
+    const taskNumber = row.querySelector(".task-number");
     const checkbox = row.querySelector("input");
     const title = row.querySelector("h3");
     const detail = row.querySelector("p");
@@ -517,11 +592,12 @@ const renderChecklist = () => {
 
     checkbox.checked = isTaskDone(state, task.id);
     row.classList.toggle("is-done", checkbox.checked);
+    taskNumber.textContent = String(index + 1).padStart(2, "0");
     title.textContent = task.title;
     detail.textContent = task.detail;
     detail.hidden = true;
     meta.innerHTML = `<span>${task.sector}</span><span>${task.operation}</span>${
-      completedAt ? `<span>Concluido as ${completedAt}</span>` : "<span>Pendente</span>"
+      completedAt ? `<span>Concluído às ${completedAt}</span>` : "<span>Pendente</span>"
     }`;
 
     checkbox.addEventListener("change", () => {

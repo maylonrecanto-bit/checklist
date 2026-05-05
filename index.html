@@ -9,10 +9,12 @@
   <body>
     <main class="app-shell">
       <section class="topbar" aria-label="Resumo do checklist">
-        <div>
-          <p class="eyebrow">Rede BOMBar</p>
-          <h1>Checklist Restaurante</h1>
-          <a class="page-link" href="editar.html">Editar tarefas</a>
+        <div class="brand-panel">
+          <div>
+            <p class="eyebrow">Rede BOMBar</p>
+            <h1>Checklist Restaurante</h1>
+            <a class="page-link" href="editar.html">Editar tarefas</a>
+          </div>
         </div>
         <div class="shift-card">
           <label for="shiftDate">Data</label>
@@ -21,15 +23,15 @@
       </section>
 
       <section class="dashboard" aria-label="Indicadores">
-        <article>
+        <article class="metric-card metric-done">
           <span id="doneCount">0</span>
-          <p>concluidos</p>
+          <p>concluídos</p>
         </article>
-        <article>
+        <article class="metric-card metric-pending">
           <span id="pendingCount">0</span>
           <p>pendentes</p>
         </article>
-        <article>
+        <article class="metric-card metric-progress">
           <span id="progressPercent">0%</span>
           <p>progresso</p>
         </article>
@@ -46,7 +48,7 @@
           <span>Loja</span>
           <select id="storeFilter" aria-label="Escolher loja">
             <option value="Choperia Colorado">Choperia Colorado</option>
-            <option value="Recanto da Praca">Recanto da Praca</option>
+            <option value="Recanto da Praça">Recanto da Praça</option>
             <option value="Severino Boteco Porreta">Severino Boteco Porreta</option>
           </select>
         </label>
@@ -70,7 +72,7 @@
       <section class="send-panel" aria-label="Enviar checklist">
         <div>
           <h2>Resumo do dia</h2>
-          <p id="sendSummary">Marque as tarefas concluidas para montar a lista.</p>
+          <p id="sendSummary">Marque as tarefas concluídas para montar a lista.</p>
         </div>
         <div class="send-actions">
           <button id="printButton" class="ghost-button" type="button">Imprimir checklist</button>
@@ -81,6 +83,7 @@
 
     <template id="taskTemplate">
       <article class="task-row">
+        <span class="task-number"></span>
         <label class="check-control">
           <input type="checkbox" />
           <span></span>
