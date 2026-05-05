@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Tarefas - Checklist Restaurante</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Cabecalho">
+        <div>
+          <p class="eyebrow">Configuracao</p>
+          <h1>Editar tarefas</h1>
+          <a class="page-link" href="index.html">Voltar ao checklist</a>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Escolher checklist para editar">
+        <label class="control-field">
+          <span>Setor</span>
+          <select id="sectorFilter" aria-label="Escolher setor">
+          </select>
+        </label>
+        <label class="control-field">
+          <span>Tipo de checklist</span>
+          <select id="operationFilter" aria-label="Escolher abertura ou fechamento">
+            <option value="Abertura">Abertura</option>
+            <option value="Fechamento">Fechamento</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="task-editor" aria-label="Gerenciar tarefas">
+        <div class="editor-heading">
+          <div>
+            <h2>Tarefas cadastradas</h2>
+            <p>Alteracoes feitas aqui aparecem na tela principal do checklist.</p>
+          </div>
+        </div>
+        <form id="taskForm" class="task-form">
+          <input id="taskId" type="hidden" />
+          <label>
+            <span>Tarefa</span>
+            <input id="taskTitle" type="text" placeholder="Digite uma nova tarefa" required />
+          </label>
+          <button id="saveTaskButton" class="whatsapp-button" type="submit">Salvar tarefa</button>
+          <button id="clearTaskButton" class="ghost-button" type="button">Limpar</button>
+        </form>
+        <div id="editableTasks" class="editable-tasks"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

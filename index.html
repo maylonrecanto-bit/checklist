@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist Restaurante</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Resumo do checklist">
+        <div>
+          <p class="eyebrow">Operacao diaria</p>
+          <h1>Checklist Restaurante</h1>
+          <a class="page-link" href="editar.html">Editar tarefas</a>
+        </div>
+        <div class="shift-card">
+          <label for="shiftDate">Data</label>
+          <input id="shiftDate" type="date" />
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Indicadores">
+        <article>
+          <span id="doneCount">0</span>
+          <p>concluidos</p>
+        </article>
+        <article>
+          <span id="pendingCount">0</span>
+          <p>pendentes</p>
+        </article>
+        <article>
+          <span id="progressPercent">0%</span>
+          <p>progresso</p>
+        </article>
+      </section>
+
+      <section class="progress-wrap" aria-label="Barra de progresso">
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Controles">
+        <label class="control-field">
+          <span>Setor</span>
+          <select id="sectorFilter" aria-label="Escolher setor">
+          </select>
+        </label>
+        <label class="control-field">
+          <span>Tipo de checklist</span>
+          <select id="operationFilter" aria-label="Escolher abertura ou fechamento">
+            <option value="Abertura">Abertura</option>
+            <option value="Fechamento">Fechamento</option>
+          </select>
+        </label>
+        <button id="resetButton" class="ghost-button" type="button">Reiniciar dia</button>
+      </section>
+
+      <section id="checklist" class="checklist" aria-live="polite"></section>
+
+      <section class="send-panel" aria-label="Enviar checklist">
+        <div>
+          <h2>Resumo do dia</h2>
+          <p id="sendSummary">Marque as tarefas concluidas para montar a lista.</p>
+        </div>
+        <div class="send-actions">
+          <button id="printButton" class="ghost-button" type="button">Imprimir checklist</button>
+          <button id="whatsappButton" class="whatsapp-button" type="button">Enviar WhatsApp</button>
+        </div>
+      </section>
+    </main>
+
+    <template id="taskTemplate">
+      <article class="task-row">
+        <label class="check-control">
+          <input type="checkbox" />
+          <span></span>
+        </label>
+        <div class="task-content">
+          <div class="task-title-line">
+            <h3></h3>
+          </div>
+          <p></p>
+          <div class="task-meta"></div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
