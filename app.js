@@ -350,6 +350,7 @@ const whatsappNumber = "5534991147905";
 const checklist = document.querySelector("#checklist");
 const template = document.querySelector("#taskTemplate");
 const dateInput = document.querySelector("#shiftDate");
+const storeFilter = document.querySelector("#storeFilter");
 const sectorFilter = document.querySelector("#sectorFilter");
 const operationFilter = document.querySelector("#operationFilter");
 const resetButton = document.querySelector("#resetButton");
@@ -403,8 +404,16 @@ const today = getLocalDate();
 if (dateInput) {
   dateInput.value = localStorage.getItem("restaurant-checklist-date") || today;
 }
+if (storeFilter) {
+  storeFilter.value = localStorage.getItem("restaurant-checklist-store") || storeFilter.value;
+}
 
-const getStorageKey = () => `restaurant-checklist-${dateInput?.value || today}`;
+const makeStorageValue = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+const getSelectedStore = () => storeFilter?.value || "Choperia Colorado";
+
+const getStorageKey = () =>
+  `restaurant-checklist-${makeStorageValue(getSelectedStore())}-${dateInput?.value || today}`;
 
 const formatTime = (date = new Date()) =>
   date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
@@ -449,7 +458,7 @@ const updateSummary = () => {
   pendingCount.textContent = pending;
   progressPercent.textContent = `${percent}%`;
   progressBar.style.width = `${percent}%`;
-  sendSummary.textContent = `${operationFilter.value} - ${sectorFilter.value}: ${completed} de ${selectedTasks.length} tarefas concluidas.`;
+  sendSummary.textContent = `${getSelectedStore()} - ${operationFilter.value} - ${sectorFilter.value}: ${completed} de ${selectedTasks.length} tarefas concluidas.`;
   whatsappButton.disabled = completed === 0;
 };
 
@@ -458,7 +467,9 @@ const getCompletedMessage = () => {
   const selectedTasks = getSelectedTasks();
   const completedTasks = selectedTasks.filter((task) => isTaskDone(state, task.id));
   const lines = [
-    `CHECKLIST RESTAURANTE - ${dateInput.value}`,
+    "REDE BOMBAR",
+    `Loja: ${getSelectedStore()}`,
+    `Data: ${dateInput.value}`,
     `Setor: ${sectorFilter.value}`,
     `Tipo: ${operationFilter.value}`,
     `Concluidas: ${completedTasks.length}/${selectedTasks.length}`,
@@ -493,7 +504,7 @@ const renderChecklist = () => {
 
   const heading = document.createElement("div");
   heading.className = "category-heading";
-  heading.innerHTML = `<h2>${sectorFilter.value}</h2><span>${operationFilter.value} - ${filteredTasks.length} tarefas</span>`;
+  heading.innerHTML = `<h2>${sectorFilter.value}</h2><span>${getSelectedStore()} - ${operationFilter.value} - ${filteredTasks.length} tarefas</span>`;
   section.append(heading);
 
   filteredTasks.forEach((task) => {
@@ -607,8 +618,11 @@ if (dateInput) {
   });
 }
 
-[sectorFilter, operationFilter].forEach((control) => {
+[storeFilter, sectorFilter, operationFilter].filter(Boolean).forEach((control) => {
   control.addEventListener("input", () => {
+    if (control === storeFilter) {
+      localStorage.setItem("restaurant-checklist-store", storeFilter.value);
+    }
     clearTaskForm();
     renderChecklist();
     renderEditableTasks();
